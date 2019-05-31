@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  createBottomTabNavigator
+  createBottomTabNavigator, createStackNavigator
 } from 'react-navigation';
 
 import {
@@ -12,7 +12,7 @@ import {
 
 import HeaderButton from '../../components/header/header.component';
 
-const UserRoute = createBottomTabNavigator(
+const UserRoute = createStackNavigator(
   {
     User: {
       screen: UserScreen
